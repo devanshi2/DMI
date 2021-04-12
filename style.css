@@ -1,0 +1,239 @@
+
+body{
+    width:100%;
+}
+/* Header section CSS */
+#nav {
+    width:100%;
+    height:90px;
+    background-color:#007bff; 
+   margin:-8px 0 0 -8px;
+   padding:0;
+    z-index:1;
+    display: block;
+    }
+    
+#logo{
+     width:50px; 
+     display:inline-block;
+     border: 3px ridge #0e49b5;
+     border-radius: 100px;
+     margin: 0.7rem;
+     position: relative;
+     top: 7px;
+    }
+.name{
+      display: inline-block;
+      margin-top: 10px;
+      padding-top: 0;
+      position: relative;
+      bottom:30px;
+      font-family: 'Times new roman';
+    }
+    
+#nav ul{
+      position:fixed;
+      width:100%;
+      height:40vh;
+      top:80px;
+      left:-150%;
+      text-align: center;
+      transition:all .5s e#ffffff;
+      opacity:0.5;
+    }
+    
+#nav ul li{
+      display:block;
+      list-style-type: none;
+      margin-top: 4em;
+      color:white;
+    }
+#nav ul li a{
+      font-size:20px;
+      color:#ffffff;
+      font-weight: bolder;
+      text-decoration: none;
+    }
+    /* For toggle bar in mobile */
+.checkbtn{
+      font-size:50px;
+      float:right;
+      line-height:110px;
+      margin-right:40px;
+      cursor: pointer;
+      display:block;
+    }
+input{
+      display: none;
+    }
+#checked{
+      display:none;
+    } 
+#check:checked ~ul{
+      left:0;
+    } 
+    
+.fa-bars{
+      font-size:50px;
+      line-height: 1.5;
+    }
+/* Footer Section CSS */
+.footer{
+        text-align: center;
+        background-color:#000000;
+        width:100%;
+        height:550px;
+        padding:0;
+        margin:-8px 0 0 -8px;
+      }
+      
+.footer ul li{
+        list-style: none;
+        font-size: 1rem;
+        color:#e1e5df;
+        text-align: center;
+      }
+      
+.footer ul li a{
+        color:#e1e5df;
+        text-decoration: none;
+      }
+.footer h2{
+        font-size: 1.5rem;
+        color: #e1e5df;
+        text-align: center;
+        padding: 20px 10px 0 30px;
+        font-family: 'Times New Roman';
+      }
+.footer .col .fa {
+        padding: 10px 10px 10px 10px;
+        width: 20px;
+        height:20px;
+        margin:5px 8px 40px 8px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 100%;
+        background-color: darkblue;
+        color: #ffffff;
+      }
+.footer p{
+        padding-top: 0px;
+        color:#d9dfd7;
+        font-size: 1rem;
+      }
+.footer .col{
+        width: 100%;
+        height: auto;
+        float: left;
+        margin-top: -20px;
+      }
+      /* Animation in hr tag */
+@keyframes animate1{
+        from{
+          width: 10px;
+        }
+        to{
+          width:200px;
+        }
+      }
+#line{
+        animation-name: animate1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        border-radius: 100px;
+        border:2px solid lightslategray;
+        margin: 25px 100px 5px 50px;
+      }
+      /* For laptop */
+@media screen and (min-width: 768px) {
+    @keyframes animate1{
+            from{
+              width: 10px;
+            }
+            to{
+              width:400px;
+            }
+          }
+    #line{
+            position: relative;
+            bottom:20px;
+            left:175px;
+            margin:0;
+          }
+          
+      }
+/* For laptop */
+@media screen and (min-width: 1024px){
+    #nav{
+         height:15vh;
+       } 
+    #nav ul{
+         float: right;
+         position: relative;
+         bottom:500px;
+         margin:0.5em;
+           left:300px;
+           background-color: transparent;
+       }
+    #nav ul li {
+          display:inline;
+           margin-bottom: -1em;
+             padding-right: 2em;
+             position: relative;
+             bottom:160px;
+       }
+    #nav ul li a{
+       /* text-shadow:2px 1px lightsalmon; */
+         text-decoration: none;
+         opacity:0.9;
+         font-weight: bolder;
+       }
+    #nav ul li a:hover{
+         opacity:1;
+         font-size:1.5rem;
+       } 
+    .checkbtn{
+       display:none;
+     }
+    #check{
+       display: none;
+     }
+    #checked{
+       display: none;
+     }
+    .footer{
+        height:60vh;
+      }
+    .footer ul li{
+          font-size: 1.5rem;
+      }
+    .footer h2{
+          font-size: 2rem;
+      }
+    .footer p{
+        padding-top: 300px;
+      }
+    .footer .col{
+        width: 30%;
+      }
+    @keyframes animate1{
+        from{
+          width: 10px;
+        }
+        to{
+          width:400px;
+        }
+      }
+    #line{
+        position: relative;
+        top:100px;
+        left:40px;
+      }
+    .col .fa {
+        padding: 17px 17px 17px 17px;
+        width: 20px;
+        height:20px;
+        margin:0 8px 20px 8px;
+      }
+}

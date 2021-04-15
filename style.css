@@ -1,239 +1,284 @@
-
-body{
-    width:100%;
+html {
+  overflow-x: hidden;
+}
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 /* Header section CSS */
 #nav {
-    width:100%;
-    height:90px;
-    background-color:#007bff; 
-   margin:-8px 0 0 -8px;
-   padding:0;
-    z-index:1;
-    display: block;
-    }
-    
-#logo{
-     width:50px; 
-     display:inline-block;
-     border: 3px ridge #0e49b5;
-     border-radius: 100px;
-     margin: 0.7rem;
-     position: relative;
-     top: 7px;
-    }
-.name{
-      display: inline-block;
-      margin-top: 10px;
-      padding-top: 0;
-      position: relative;
-      bottom:30px;
-      font-family: 'Times new roman';
-    }
-    
-#nav ul{
-      position:fixed;
-      width:100%;
-      height:40vh;
-      top:80px;
-      left:-150%;
-      text-align: center;
-      transition:all .5s e#ffffff;
-      opacity:0.5;
-    }
-    
-#nav ul li{
-      display:block;
-      list-style-type: none;
-      margin-top: 4em;
-      color:white;
-    }
-#nav ul li a{
-      font-size:20px;
-      color:#ffffff;
-      font-weight: bolder;
-      text-decoration: none;
-    }
-    /* For toggle bar in mobile */
-.checkbtn{
-      font-size:50px;
-      float:right;
-      line-height:110px;
-      margin-right:40px;
-      cursor: pointer;
-      display:block;
-    }
-input{
-      display: none;
-    }
-#checked{
-      display:none;
-    } 
-#check:checked ~ul{
-      left:0;
-    } 
-    
-.fa-bars{
-      font-size:50px;
-      line-height: 1.5;
-    }
+  width: 100%;
+  height: 90px;
+  background-color: #000000;
+  margin: -8px 0 0 -8px;
+  padding: 0;
+  z-index: 1;
+  display: block;
+  color:#ffffff;
+}
+
+/* #nav ul {
+  float: right;
+  position: relative;
+  bottom: 500px;
+  margin: 0.5em;
+  left: 250px;
+
+} */
+/* #nav ul li {
+  display: inline;
+  margin-bottom: -1em;
+  padding-right: 2em;
+  position: relative;
+  bottom: 160px;
+} */
+/* #nav ul li a {
+   text-shadow:2px 1px lightsalmon; 
+  text-decoration: none;
+  font-weight: bolder;
+}
+#nav ul li a:hover {
+  font-size: 1.5rem;
+} */
+#nav #logo {
+  width: 70px;
+  display: inline-block;
+  border: 3px ridge #000000;
+  border-radius: 10px;
+  box-shadow: 3px 3px #ffffff;
+  margin: 0.7rem;
+  position: relative;
+  top: 7px;
+}
+#nav .row{
+  display: flex;
+  flex-wrap: wrap;
+} 
+#nav .name {
+  display: inline-block;
+  /* margin-top: 10px; */
+  padding-top: 0;
+  position: relative;
+  top: 15px;
+  font-family: helvetica;
+  color:#ffffff;
+  font-weight:lighter;
+}
+#nav .name .title{
+  color:#ffa500;
+  font-weight:bolder;
+}
+
+#nav ul {
+ float:right;
+ margin-top:35px;
+ margin-left:300px;
+  position: relative;
+ top: -80px; 
+}
+
+#nav ul li {
+  display: inline;
+  padding:9px;
+}
+#nav ul li a {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bolder;
+  text-decoration: none;
+}
+#nav ul button{
+  border:3px inset #ffa500;
+  font-size: 25px;
+  color: gold;
+  background-color: transparent;
+  cursor: pointer;
+}
+#nav ul button .fa{
+  margin-left: 8px;
+}
+#nav ul button:hover{
+  background-image: linear-gradient(yellow,gold,#ffa500,orange) ;
+  color: #ffffff;
+}
+#nav ul li a:hover{
+  color:#ffa500;
+}
+/* For toggle bar in mobile */
+/* #nav .checkbtn {
+  font-size: 50px;
+  float: right;
+  line-height: 110px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  right:100px;
+}
+#nav input {
+  display: none;
+}
+#nav #checked {
+  display: none;
+}
+#nav #check:checked ~ ul {
+  left: 0;
+}
+
+#nav .fa-bars {
+  font-size: 50px;
+  line-height: 1.5;
+} */
 /* Footer Section CSS */
-.footer{
-        text-align: center;
-        background-color:#000000;
-        width:100%;
-        height:550px;
-        padding:0;
-        margin:-8px 0 0 -8px;
-      }
-      
-.footer ul li{
-        list-style: none;
-        font-size: 1rem;
-        color:#e1e5df;
-        text-align: center;
-      }
-      
-.footer ul li a{
-        color:#e1e5df;
-        text-decoration: none;
-      }
-.footer h2{
-        font-size: 1.5rem;
-        color: #e1e5df;
-        text-align: center;
-        padding: 20px 10px 0 30px;
-        font-family: 'Times New Roman';
-      }
-.footer .col .fa {
-        padding: 10px 10px 10px 10px;
-        width: 20px;
-        height:20px;
-        margin:5px 8px 40px 8px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 100%;
-        background-color: darkblue;
-        color: #ffffff;
-      }
-.footer p{
-        padding-top: 0px;
-        color:#d9dfd7;
-        font-size: 1rem;
-      }
-.footer .col{
-        width: 100%;
-        height: auto;
-        float: left;
-        margin-top: -20px;
-      }
-      /* Animation in hr tag */
-@keyframes animate1{
-        from{
-          width: 10px;
-        }
-        to{
-          width:200px;
-        }
-      }
-#line{
-        animation-name: animate1;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        border-radius: 100px;
-        border:2px solid lightslategray;
-        margin: 25px 100px 5px 50px;
-      }
-      /* For laptop */
-@media screen and (min-width: 768px) {
-    @keyframes animate1{
-            from{
-              width: 10px;
-            }
-            to{
-              width:400px;
-            }
-          }
-    #line{
-            position: relative;
-            bottom:20px;
-            left:175px;
-            margin:0;
-          }
-          
-      }
-/* For laptop */
-@media screen and (min-width: 1024px){
-    #nav{
-         height:15vh;
-       } 
-    #nav ul{
-         float: right;
-         position: relative;
-         bottom:500px;
-         margin:0.5em;
-           left:300px;
-           background-color: transparent;
-       }
-    #nav ul li {
-          display:inline;
-           margin-bottom: -1em;
-             padding-right: 2em;
-             position: relative;
-             bottom:160px;
-       }
-    #nav ul li a{
-       /* text-shadow:2px 1px lightsalmon; */
-         text-decoration: none;
-         opacity:0.9;
-         font-weight: bolder;
-       }
-    #nav ul li a:hover{
-         opacity:1;
-         font-size:1.5rem;
-       } 
-    .checkbtn{
-       display:none;
-     }
-    #check{
-       display: none;
-     }
-    #checked{
-       display: none;
-     }
-    .footer{
-        height:60vh;
-      }
-    .footer ul li{
-          font-size: 1.5rem;
-      }
-    .footer h2{
-          font-size: 2rem;
-      }
-    .footer p{
-        padding-top: 300px;
-      }
-    .footer .col{
-        width: 30%;
-      }
-    @keyframes animate1{
-        from{
-          width: 10px;
-        }
-        to{
-          width:400px;
-        }
-      }
-    #line{
-        position: relative;
-        top:100px;
-        left:40px;
-      }
-    .col .fa {
-        padding: 17px 17px 17px 17px;
-        width: 20px;
-        height:20px;
-        margin:0 8px 20px 8px;
-      }
+.footer {
+  text-align: center;
+  background-color: #000000;
+  width: 100%;
+  /* height: 550px; */
+  padding: 3rem 1rem;
+  /* margin: -8px 0 0 -8px; */
+}
+.footer .row {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
+.footer ul li {
+  list-style: none;
+  font-size: 1.25rem;
+  color: #e1e5df;
+  text-align: center;
+}
+
+.footer ul li a {
+  color: #e1e5df;
+  text-decoration: none;
+}
+.footer h2 {
+  font-size: 1.5rem;
+  color: #e1e5df;
+  text-align: center;
+  padding: 20px 10px 0 30px;
+  font-family: "Times New Roman";
+}
+
+/* new style for icons  */
+.footer .social-links {
+  margin-top: 20px;
+}
+.footer .social-links a {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #007bff;
+  border-radius: 100%;
+
+  text-align: center;
+}
+.footer .social-links a i {
+  width: 20px;
+  height: 20px;
+}
+.footer .social-links a:hover {
+  background-color: #007bff;
+  color: white;
+}
+/* .footer .col1 .fa {
+  padding: 5px 5px 5px 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 5px 8px 40px 8px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
+  background-color: darkblue;
+  color: #ffffff;
+} */
+/* .footer .col1 .fa:hover {
+  position: relative;
+  bottom: 10px;
+} */
+.footer p {
+  padding: 0px 10px;
+  color: #d9dfd7;
+  font-size: 1.25rem;
+}
+.footer .col1 {
+  width: 320px;
+  height: auto;
+  float: left;
+  margin-top: -20px;
+}
+/* Animation in hr tag */
+@keyframes animate1 {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 60%;
+  }
+}
+.footer #line {
+  position: relative;
+  margin-top: 50px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  animation-name: animate1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-radius: 100px;
+  border: 2px solid #007bff;
+  /* margin: 25px 100px 5px 50px; */
+}
+
+@media screen and (min-width: 1024px) {
+  
+  #nav .checkbtn {
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  #checked {
+    display: none;
+  }
+  /* .footer {
+    /* height: 60vh; */
+  
+  .footer ul li {
+    font-size: 1.5rem;
+  }
+  .footer h2 {
+    font-size: 2rem;
+  }
+  /* .footer p {
+    /* padding-top: 300px; */
+  .footer .col1 {
+    width: 30%;
+  }
+  /* @keyframes animate1 {
+    from {
+      width: 10px;
+    }
+    to {
+      width: 400px;
+    }
+  } */
+  /* .footer #line {
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  } */
+  /* .footer .col1 .fa {
+    padding: 17px 17px 17px 17px;
+    width: 20px;
+    height: 20px;
+    margin: 0 8px 20px 8px;
+  } */
 }
